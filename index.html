@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Atividade API - Países</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pap5FW+1E4VqpjLXoxO6D6Xb9p9kYK+zxTg4g5L1GkE9H1KxX/VL3T3qM5P/D72cEh6yrfr/znqAd+0w3b5d5Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-globe-americas"></i> Quiz de Países
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item me-3">
+                        <span class="navbar-text">
+                            <i class="fas fa-star text-warning"></i> Pontuação: <span id="score">0</span>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5 bg-dark text-light">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col text-center">
+                        <h1 class="display-4">Quiz de Países</h1>
+                        <p class="lead">Teste seus conhecimentos sobre países do mundo!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img id="flagImage" alt="Bandeira do país" class="img-fluid rounded shadow-lg" style="display: none;">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div id="dicaTexto" class="mb-3"></div>
+                        <div id="options" class="d-flex flex-column gap-3"></div>
+                        <div id="result" class="mt-3"></div>
+                    </div>
+                </div>
+
+                <div class="row mt-4"> 
+                    <div class="col-md-6 d-flex justify-content-start align-items-center">
+                        <button class="btn btn-warning me-2" id="nextButton" style="display:none;">
+                            <i class="fas fa-arrow-right me-1"></i> Próximo
+                        </button>
+                        <button class="btn btn-warning" id="dica" style="display:none">
+                            <i class="fas fa-lightbulb me-1"></i> Dica
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-yellow py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Guilherme Cunha Rocha. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>
